@@ -1,0 +1,33 @@
+POST http://localhost:3333/jogo
+Content-Type: application/json
+
+{
+    "titulo": "Jogo: 02",
+    "desenvolvedor": "Desenvolvedor: 02",
+    "distribuidor": "Distribuidor: 02",
+    "nhoras": 450
+}
+
+###
+
+GET http://localhost:3333/jogo
+
+###
+
+GET http://localhost:3333/jogo?search=Aula
+
+###
+
+PUT http://localhost:3333/jogo/1211cc2e-af3a-421e-b8e4-f402b27fe663
+Content-Type: application/json
+
+{
+    "titulo": "Jogo: Aula",
+    "desenvolvedor": "Desenvolvedor: IFMS Studios",
+    "distribuidor": "Distribuidor: IFMS Studios",
+    "nhoras": 100
+}
+
+###
+
+DELETE http://localhost:3333/jogo/1211cc2e-af3a-421e-b8e4-f402b27fe663
